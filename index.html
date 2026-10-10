@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary Sumanth & Teena Mohitha | October 13 Celebration</title>
+  <meta name="description" content="A luxury romantic anniversary celebration website dedicated to Sumanth & Teena Mohitha. Celebrating love, milestones, and timeless companionship on October 13th.">
+  <meta name="keywords" content="Anniversary, Sumanth, Teena Mohitha, October 13, Love, Wishes, Celebration">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects & Particle Canvas -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <canvas id="particles-canvas"></canvas>
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="main-navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" id="nav-brand-logo">
+        Sumanth <span>&hearts;</span> Mohitha
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#wishes-section" class="nav-link">Best Wishes</a></li>
+        <li><a href="#letter-section" class="nav-link">Love Letter</a></li>
+        <li><a href="#timeline-section" class="nav-link">Our Story</a></li>
+        <li><a href="#reasons-section" class="nav-link">Why I Love You</a></li>
+        <li><a href="#gallery-section" class="nav-link">Memories</a></li>
+        <li><a href="#card-studio-section" class="nav-link">Card Studio</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="music-toggle-btn" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;" title="Play/Mute Romantic Audio">
+          🎵 Play Music
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-badge">
+        ✨ Sacred Milestone • Since October 13, 2025 ✨
+      </div>
+      
+      <h1 class="hero-title">
+        Happy Anniversary <br>
+        <span class="name-highlight">Sumanth & Teena Mohitha</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Celebrating a divine bond woven with unconditional love, cherished laughter, mutual respect, and timeless memories. Every single day with you is a lifelong celebration.
+      </p>
+
+      <div class="hero-date-pill">
+        <span>💍 October 13, 2025</span>
+        <span>•</span>
+        <span>Forever & Always ♾️</span>
+      </div>
+
+      <!-- Couple Spotlight Frame -->
+      <div class="hero-couple-showcase">
+        <div class="hero-avatar-card">
+          <img src="assets/images/memory1_event_heart.jpg" alt="Sumanth and Teena Mohitha" class="hero-avatar-img">
+          <div class="hero-avatar-badge">
+            Sumanth &hearts; Teena Mohitha
+          </div>
+        </div>
+      </div>
+
+      <!-- Time Together & Next Anniversary Counter Box -->
+      <div class="counter-box" id="anniversary-counter-card">
+        <div class="counter-header">
+          <h2 class="counter-title">
+            <span>⏳</span> Our Journey of Love Together
+          </h2>
+          <span style="color: var(--primary-gold); font-size: 0.9rem; font-weight: 500;">
+            Since October 13, 2025
+          </span>
+        </div>
+
+        <div class="counter-grid">
+          <div class="time-card">
+            <div class="time-number" id="count-years">00</div>
+            <div class="time-label">Years</div>
+          </div>
+          <div class="time-card">
+            <div class="time-number" id="count-months">00</div>
+            <div class="time-label">Months</div>
+          </div>
+          <div class="time-card">
+            <div class="time-number" id="count-days">00</div>
+            <div class="time-label">Days</div>
+          </div>
+          <div class="time-card">
+            <div class="time-number" id="count-hours">00</div>
+            <div class="time-label">Hours</div>
+          </div>
+          <div class="time-card">
+            <div class="time-number" id="count-minutes">00</div>
+            <div class="time-label">Minutes</div>
+          </div>
+          <div class="time-card">
+            <div class="time-number" id="count-seconds">00</div>
+            <div class="time-label">Seconds</div>
+          </div>
+        </div>
+
+        <!-- Next October 13 Countdown -->
+        <div class="countdown-banner">
+          <div class="countdown-info">
+            <h4 id="countdown-headline">✨ Next October 13 Anniversary Countdown</h4>
+            <p>Counting down every heartbeat until our next special celebration date</p>
+          </div>
+          <div class="countdown-mini-grid">
+            <div class="countdown-mini-card">
+              <span id="cd-days">00</span>
+              <small>Days</small>
+            </div>
+            <div class="countdown-mini-card">
+              <span id="cd-hours">00</span>
+              <small>Hours</small>
+            </div>
+            <div class="countdown-mini-card">
+              <span id="cd-minutes">00</span>
+              <small>Mins</small>
+            </div>
+            <div class="countdown-mini-card">
+              <span id="cd-seconds">00</span>
+              <small>Secs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <button id="celebrate-hero-btn" class="btn btn-rose" style="font-size: 1.05rem; padding: 14px 34px;">
+          🎉 Celebrate Our Love
+        </button>
+        <a href="#wishes-section" class="btn btn-primary" style="font-size: 1.05rem; padding: 14px 34px;">
+          💌 Read Anniversary Wishes
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Curated Wishes Section -->
+  <section class="section" id="wishes-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Executive & Romantic Blessings</span>
+        <h2 class="section-title">Best <span>Anniversary Wishes</span></h2>
+        <p class="section-subtitle">
+          Carefully composed words of love, high respect, elegance, and heartfelt devotion crafted for Sumanth and Teena Mohitha.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="wishes-filter">
+        <button class="filter-btn active" data-category="all">✨ All Wishes</button>
+        <button class="filter-btn" data-category="romantic">❤️ Deeply Romantic</button>
+        <button class="filter-btn" data-category="professional">🥂 Elegant & Professional</button>
+        <button class="filter-btn" data-category="poetic">🌌 Poetic & Timeless</button>
+        <button class="filter-btn" data-category="sweet">🥰 Sweet & Joyful</button>
+        <button class="filter-btn" data-category="future">🌟 Future Promises</button>
+      </div>
+
+      <!-- Dynamic Wishes Grid -->
+      <div class="wishes-grid" id="wishes-container">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive 3D Love Letter Section -->
+  <section class="section letter-section" id="letter-section">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+      <div class="section-header">
+        <span class="section-badge">From Sumanth's Heart</span>
+        <h2 class="section-title">An <span>Eternal Love Letter</span></h2>
+        <p class="section-subtitle">
+          Tap the golden wax seal below to break the seal and unfold the sacred message inside.
+        </p>
+      </div>
+
+      <div class="envelope-instruction">
+        <span>👇 Tap Envelope Wax Seal (S ❤️ M) to Open</span>
+      </div>
+
+      <!-- 3D Envelope Component -->
+      <div class="envelope-wrapper">
+        <div class="envelope" id="anniversary-envelope">
+          <div class="envelope-flap"></div>
+          
+          <div class="wax-seal">
+            <div class="wax-seal-inner">S ❤️ M</div>
+          </div>
+
+          <div class="letter-paper">
+            <div class="letter-content">
+              <div style="display: flex; justify-content: center; margin-bottom: 12px;">
+                <img src="assets/images/memory2_selfie_smiles.jpg" alt="Sumanth & Mohitha Selfie" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #d4af37; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              </div>
+              <h3>My Dearest Teena Mohitha,</h3>
+              <p>
+                From the moment you entered my world, everything became brighter, warmer, and endlessly meaningful. You are my safe place when the world feels loud, my greatest cheer on my brightest days, and my favorite reason to smile every morning.
+              </p>
+              <p>
+                October 13 will always remain the most cherished date on my calendar. Thank you for giving me your trust, your gentle affection, and your beautiful laughter. I promise to love you, protect your dreams, and walk proudly beside you for all our tomorrows.
+              </p>
+              <div class="letter-signature">
+                Forever Yours With All My Heart,<br>
+                <strong>Sumanth ❤️</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Love Story Milestones Timeline -->
+  <section class="section" id="timeline-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Our Beautiful Journey</span>
+        <h2 class="section-title">Story of <span>Sumanth & Teena Mohitha</span></h2>
+        <p class="section-subtitle">
+          Milestones, memories, and the sweet chapters of our unfolding love tale.
+        </p>
+      </div>
+
+      <div class="timeline-container" id="timeline-container">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Reasons Why I Love You Section -->
+  <section class="section" id="reasons-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Infinite Devotion</span>
+        <h2 class="section-title">Reasons Why <span>I Adore You</span></h2>
+        <p class="section-subtitle">
+          Hover or tap on each card to reveal the special little things that make Mohitha irreplaceable to Sumanth.
+        </p>
+      </div>
+
+      <div class="reasons-grid" id="reasons-container">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Moments & Memory Gallery -->
+  <section class="section" id="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Captured Moments</span>
+        <h2 class="section-title">Treasured <span>Memories Gallery</span></h2>
+        <p class="section-subtitle">
+          Pictures of smiles, romantic sunset dates, and cherished memories. You can also upload your own favorite photos below!
+        </p>
+      </div>
+
+      <div class="gallery-controls">
+        <div style="color: var(--text-gold); font-size: 0.95rem;">
+          📸 Click any memory to expand into HD Lightbox
+        </div>
+        <div>
+          <label for="photo-upload-input" class="btn btn-outline" style="cursor: pointer;">
+            ➕ Add Your Own Photos
+          </label>
+          <input type="file" id="photo-upload-input" multiple accept="image/*" style="display: none;">
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="gallery-container">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Surprise Gift Box Section -->
+  <section class="section" id="surprise-section">
+    <div class="container">
+      <div class="surprise-container">
+        <span class="section-badge">Special Surprise For Mohitha</span>
+        <h2 class="section-title" style="margin-bottom: 20px;">Unwrap Your <span>Anniversary Gift</span></h2>
+        <p class="section-subtitle" style="margin-bottom: 40px;">
+          Tap the gift box below to open your exclusive anniversary promise and love voucher.
+        </p>
+
+        <!-- 3D Gift Box -->
+        <div class="gift-box-container" id="surprise-gift-box">
+          <div class="gift-box">
+            <div class="gift-ribbon-v"></div>
+            <div class="gift-ribbon-h"></div>
+            <div class="gift-box-lid">
+              <div class="gift-ribbon-v"></div>
+              <div class="gift-bow">🎀</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Revealed Voucher Card -->
+        <div class="voucher-card" id="voucher-card">
+          <div style="font-size: 2.2rem; margin-bottom: 8px;">👑 🥂 💖</div>
+          <h3 class="voucher-title">Lifetime Love & Happiness Voucher</h3>
+          <p class="voucher-text">
+            <strong>Issued to:</strong> Teena Mohitha <br>
+            <strong>Presented with endless love by:</strong> Sumanth <br>
+            <strong>Valid for:</strong> Unlimited cuddles, spontaneous romantic dates, late-night ice creams, unyielding support, and a lifetime of devotion.
+          </p>
+          <div style="color: var(--primary-gold); font-family: var(--font-display); font-size: 1.1rem; letter-spacing: 2px;">
+            OCTOBER 13 • FOREVER NON-EXPIRING
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Anniversary Card Studio -->
+  <section class="section" id="card-studio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Interactive Card Studio</span>
+        <h2 class="section-title">Design & <span>Download Greeting Card</span></h2>
+        <p class="section-subtitle">
+          Customize your names, anniversary wish message, and color theme, then download an ultra HD image to send or share on Instagram & WhatsApp.
+        </p>
+      </div>
+
+      <div class="studio-container">
+        <!-- Studio Form Controls -->
+        <div class="studio-form">
+          <div class="form-group">
+            <label for="card-theme-select">🎨 Luxury Theme</label>
+            <select id="card-theme-select" class="form-select">
+              <option value="midnight-rose">Midnight Velvet & Rose Gold</option>
+              <option value="champagne-gold">Royal Obsidian & Champagne Gold</option>
+              <option value="velvet-crimson">Velvet Crimson & Ruby Love</option>
+              <option value="celestial-sapphire">Celestial Sapphire & Starlight</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="card-names-input">💑 Couple Names</label>
+            <input type="text" id="card-names-input" class="form-input" value="Sumanth & Teena Mohitha">
+          </div>
+
+          <div class="form-group">
+            <label for="card-date-input">🗓️ Header / Date Text</label>
+            <input type="text" id="card-date-input" class="form-input" value="Happy Anniversary • October 13">
+          </div>
+
+          <div class="form-group">
+            <label for="card-message-input">💌 Anniversary Message / Wish</label>
+            <textarea id="card-message-input" rows="4" class="form-textarea">To my dearest Teena Mohitha, every second spent by your side feels like a gentle blessing from above. Happy Anniversary! Sumanth will cherish you forever. 💖✨</textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="card-subtitle-input">✍️ Signature / Subtitle</label>
+            <input type="text" id="card-subtitle-input" class="form-input" value="With Eternal Love & Devotion">
+          </div>
+
+          <button id="download-card-btn" class="btn btn-primary" style="margin-top: 10px; padding: 14px 20px;">
+            📥 Download High-Resolution Card (.PNG)
+          </button>
+        </div>
+
+        <!-- Live Canvas Preview -->
+        <div class="studio-canvas-preview">
+          <canvas id="card-canvas"></canvas>
+          <small style="color: var(--text-muted);">✨ Live 1200x750 HD Greeting Card Preview</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Photo Gallery -->
+  <div class="modal-overlay" id="lightbox-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <img id="modal-img" src="" alt="Expanded Memory" style="width: 100%; border-radius: 12px; max-height: 70vh; object-fit: contain;">
+      <div id="modal-caption" style="color: var(--primary-gold); font-family: var(--font-serif); font-size: 1.1rem; text-align: center; margin-top: 16px;"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        Sumanth <span>&hearts;</span> Teena Mohitha
+      </div>
+      <p class="footer-text">
+        Created with eternal love and devotion • Celebrating our special day on October 13th ✨
+      </p>
+      <div style="color: rgba(255, 255, 255, 0.4); font-size: 0.85rem;">
+        &copy; Forever & Always • Happy Anniversary
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/wishes.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/card-generator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
