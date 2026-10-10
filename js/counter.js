@@ -5,9 +5,14 @@
 
 class AnniversaryCounter {
   constructor() {
-    // Journey start date: October 13, 2025
-    this.startDate = new Date(2025, 9, 13, 0, 0, 0); // Month 9 is October (0-indexed)
-    localStorage.setItem('anniversary_start_date', this.startDate.toISOString());
+    const storedStartDate = localStorage.getItem('anniversary_start_date');
+    const parsedStartDate = storedStartDate ? new Date(storedStartDate) : null;
+    this.startDate = parsedStartDate && !Number.isNaN(parsedStartDate.getTime())
+      ? parsedStartDate
+      : new Date(2025, 9, 13, 0, 0, 0);
+    if (!parsedStartDate || Number.isNaN(parsedStartDate.getTime())) {
+      localStorage.setItem('anniversary_start_date', this.startDate.toISOString());
+    }
     this.anniversaryMonth = 9; // October (0-indexed)
     this.anniversaryDay = 13;
     
